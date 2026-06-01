@@ -2,17 +2,17 @@ import { sql } from "./db.js";
 
 
 const createTableQuerry = `
-CREATE TABLE IF NOT EXISTS videos (
+CREATE TABLE IF NOT EXISTS filme (
     id VARCHAR(255) PRIMARY KEY, 
-    title VARCHAR (255), 
-    description TEXT, 
-    duration INT
+    titulo VARCHAR (255), 
+    descricao TEXT, 
+    duracao INT
 );
 `;
 
 
 sql.query(createTableQuerry)
     .then(() => {
-        console.log("Tabela 'videos' criada ou já existente com sucesso no MySQL");
+        console.log("Tabela 'filme' criada ou já existente com sucesso no MySQL");
 
     });
