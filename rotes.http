@@ -1,0 +1,28 @@
+POST http://localhost:3333/videos
+Content-Type: application/json
+
+{
+    "titulo": "filme teste",
+    "descricao": "Este é o primeiro filme de Node.js com MySQL",
+    "duracao": 900
+}
+
+###
+
+GET http://localhost:3333/filme
+# GET http://localhost:3333/filme
+
+###
+
+PUT http://localhost:3333/filme/id-do-filme-a-ser-atualizado
+Content-Type: application/json
+
+{
+    "titulo": "Auterei este filme",
+    "descricao": "descrição atualizada",
+    "duracao": 345
+}
+
+###
+
+DELETE http://localhost:3333/filme/id-do-localhost:3333/filme-a-ser-deletado
